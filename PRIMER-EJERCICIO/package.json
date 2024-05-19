@@ -1,0 +1,26 @@
+{
+  "name": "node-ejs-products",
+  "version": "1.0.0",
+  "description": "A simple Node.js app with Express and EJS",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs",
+    "start-dev": "cross-env DEBUG=app:* node index.mjs",
+    "debug": "cross-env DEBUG=app:* node index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valentina",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

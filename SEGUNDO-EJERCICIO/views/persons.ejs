@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Persons List</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Persons List</h1>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% persons.forEach(person => { %>
+                    <tr>
+                        <td><%= person.name %></td>
+                        <td><%= person.age %> years old</td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
